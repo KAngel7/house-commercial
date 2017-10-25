@@ -1,65 +1,20 @@
 .searchForm {
-  margin: 0 auto;
-  width: 100%;
-  padding: 20px 30px;
-  max-width: 1400px;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  position: relative;
+}
+.resultTable {
+  height: inherit;
 }
 
-.volume {
-  width: 100%;
-}
-
-.volume a, .volume input {
-  float: left;
-}
-
-.volume a.btn {
-  background-color: #fff;
-  width: 30%;
-  height: 37px;
-  padding: 10px 3%;
-  color: #999;
-  border: 1px solid #dfdfdf;
-}
-
-.no-touch .volume a.btn:hover {
-  background-color: #fff;
-  color: #333;
-  border-color: #999;
-}
-
-.volume a.btn.btn-round-left {
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.volume a.btn.btn-round-right {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-.volume input.form-control, .volume input.form-control[readonly] {
-  width: 40%;
-  text-align: center;
-  border-radius: 0;
-  box-shadow: none;
-  border: 0 none;
-  border-top: 1px solid #dfdfdf;
-  border-bottom: 1px solid #dfdfdf;
-  border-left: 0 none;
-  border-right: 0 none;
-  -webkit-appearance: none;
-  background-color: #fff;
-  color: #333;
-  font-size: 13px;
-}
 
 .resultTab {
   margin-left: -30px;
+}
+
+.resultBody {
+  height: calc(100% - 41px);
 }
 
 .resultTab li {
@@ -78,13 +33,23 @@
 .resultTab li.active a {
   color: black;
 }
-
 .resultsMap {
-  width: 100%;
+  height: inherit;
+  position: relative;
+}
+.searchMapWrapper {
+  width: calc(100% - 500px);
   padding: 10px;
-  min-height: 300px;
-  height: 100vw;
-  max-height: 700px;
+  height: 100%;
+}
+.searchListWrapper {
+  width: 500px;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  overflow: auto;
 }
 
 @media screen and (max-width: 767px) {
