@@ -1,8 +1,8 @@
 import * as React from 'react';
-import './style.css';
 import { RouteComponentProps } from 'react-router-dom';
-import HeaderComponents from 'Components/Header';
+import Header from 'Components/Header';
 import SelectComponent from 'Components/SelectComponent';
+import './style.css';
 import { Icon } from 'react-fa';
 
 class HomePage extends React.Component<RouteComponentProps<any>, {}> {
@@ -64,7 +64,7 @@ class HomePage extends React.Component<RouteComponentProps<any>, {}> {
     return (
       <div className="homePage">
         <div className="headerWrapper">
-          <HeaderComponents />
+          <Header />
         </div>
         <div className="bodyWrapper">
           {this.content()}

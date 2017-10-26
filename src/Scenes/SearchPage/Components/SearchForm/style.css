@@ -1,0 +1,65 @@
+.searchForm {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  position: relative;
+}
+.resultTable {
+  height: inherit;
+}
+
+
+.resultTab {
+  margin-left: -30px;
+}
+
+.resultBody {
+  height: calc(100% - 41px);
+}
+
+.resultTab li {
+  display: inline-block;
+  padding: 10px 15px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  margin: 0 1px;
+}
+
+.resultTab li:hover, .resultTab li.active {
+  border-color: #0eaaa6;
+  text-decoration: none;
+}
+
+.resultTab li.active a {
+  color: black;
+}
+.resultsMap {
+  height: inherit;
+  position: relative;
+}
+.searchMapWrapper {
+  width: calc(100% - 500px);
+  padding: 10px;
+  height: 100%;
+}
+.searchListWrapper {
+  width: 500px;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  overflow: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .resultTab ul {
+    padding-left: 10px;
+  }
+  .resultTab {
+    margin-left: -10px;
+  }
+  .searchForm {
+    padding: 15px 5px;
+  }
+}

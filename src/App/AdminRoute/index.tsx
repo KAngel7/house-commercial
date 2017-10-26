@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './style.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import HomePage from '../../Scenes/HomePage';
+import HomePage from 'Scenes/HomePage';
 
 class App extends React.Component<{}, {}> {
   render() {
