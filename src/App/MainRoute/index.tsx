@@ -6,6 +6,7 @@ import { getUserToken } from 'Services/Api/Token';
 import { connect } from 'react-redux';
 import { authenticate } from 'Redux/Modules/User';
 import SearchPage from 'Scenes/SearchPage';
+import HomePage from 'Scenes/HomePage';
 
 const mapStateToProps = (state: any) => ({});
 const mapDispatchToProps = (dispatch: any) => ({
@@ -34,6 +35,7 @@ class App extends React.Component<AppProps, AppState> {
       <Router>
         <div className="globalContainer">
           <Route exact={true} path="/search" component={SearchPage} />
+          <Route exact={true} path="/" component={HomePage} />
         </div>
       </Router>
     );
