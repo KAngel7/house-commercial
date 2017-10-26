@@ -30,6 +30,7 @@
 .top-nav__menu {
   flex: 1;
   padding-right: .9375rem;
+  padding-left: 40px;
 }
 
 .top-nav__menu ul {
@@ -47,6 +48,8 @@
   background: url(https://www.commercialrealestate.com.au/Content/images/cre-logo.svg) no-repeat;
   min-height: 48px;
   min-width: 153.76271px;
+  background-size: contain;
+  margin: 5px;
 }
 
 .top-nav__toggle .sr-only {
@@ -70,12 +73,7 @@
 }
 
 
-/* @media screen and (min-width: 46.0625em) {
-  .top-nav__logo {
-    margin-left: 0;
-    background-position: 20px center;
-  }
-} */
+
 
 .top-nav__toggle {
   height: 55px;
@@ -97,11 +95,6 @@
   height: inherit;
 }
 
-.top-nav__logo {
-  background-size: 113px auto;
-  height: 3.4375rem;
-  width: 9.375rem;
-}
 
 .top-nav .top-nav__menu-item {
   float: left;
@@ -129,10 +122,6 @@
   display: none;
 }
 
-.top-nav .top-nav__menu-item.is-cta {
-  margin-top: .625rem;
-}
-
 .top-nav .top-nav__menu-item.is-right {
   float: right;
 }
@@ -141,18 +130,6 @@
   border: none;
 }
 
-.top-nav .top-nav__menu-item.is-cta a {
-  border: solid 1px #0B2047;
-  border-radius: 3px;
-  transition: background-color 0.3s;
-  background-color: transparent;
-  padding: 0.625rem;
-  margin: 0 0 0 .625rem;
-}
-
-.top-nav .top-nav__menu-item.is-cta a:hover, .top-nav .top-nav__menu-item.is-cta a:focus, .top-nav .top-nav__menu-item.is-cta a:active {
-  background-color: #F2F5F7;
-}
 
 .top-nav__label {
   display: none;
@@ -164,15 +141,6 @@
   height: inherit;
 }
 
-.top-nav__logo {
-  background-size: 113px auto;
-  height: 3.4375rem;
-  width: 9.375rem;
-}
-
-.top-nav .top-nav__menu-item:first-child {
-  margin-left: 3.5625rem;
-}
 
 .top-nav .top-nav__menu-item {
   float: left;
@@ -200,9 +168,6 @@
   display: none;
 }
 
-.top-nav .top-nav__menu-item.is-cta {
-  margin-top: .625rem;
-}
 
 .top-nav .top-nav__menu-item.is-right {
   float: right;
@@ -212,18 +177,14 @@
   border: none;
 }
 
-.top-nav .top-nav__menu-item.is-cta a {
-  border: solid 1px #0B2047;
-  border-radius: 3px;
-  transition: background-color 0.3s;
-  background-color: transparent;
-  padding: .625rem;
-  margin: 0 0 0 .625rem;
+.top-nav .top-nav__menu-item a:hover, .top-nav .top-nav__menu-item a:focus, .top-nav .top-nav__menu-item a:active{
+  border-bottom: 3px solid #008A84;
+  border-left: none;
+  color: #3C475B;
+  text-decoration: none;
+  padding-bottom: 7px;
 }
 
-.top-nav .top-nav__menu-item.is-cta a:hover, .top-nav .top-nav__menu-item.is-cta a:focus, .top-nav .top-nav__menu-item.is-cta a:active {
-  background-color: #F2F5F7;
-}
 
 @media screen and (max-width: 767px) {
   .top-nav {
@@ -250,6 +211,8 @@
     padding-right: 0px;
     width: 100%;
     border: none;
+    margin-top: -12px;
+    padding-left: 0;
   }
   .top-nav .top-nav__menu-item {
     display: flex;
@@ -281,24 +244,11 @@
   }
   .top-nav .top-nav__menu.is-open {
     visibility: visible;
-    margin-top: 0px;
+    margin-top: -12px;
     height: 508px;
     transition-delay: 0s;
   }
   .top-nav .top-nav__menu-item.is-right {
     float: none;
-  }
-  .top-nav .top-nav__menu-item.is-cta > a {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    border-bottom: none;
-    border-left: 3px solid transparent;
-    padding-left: 21px;
-    transition: background-color 0.3s;
-    background-color: #fff;
-    border: 0px;
-    margin: 0px 10px;
-    padding-bottom: 7px;
   }
 }

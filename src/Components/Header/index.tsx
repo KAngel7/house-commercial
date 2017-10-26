@@ -54,7 +54,7 @@ class Header extends React.Component<{}, MenuBarStates> {
               <a className="top-nav__menu-item-link" href="https://www.commercialrealestate.com.au/news/">News</a>
             </li>
             <li className="top-nav__menu-divider" />
-            <li className="top-nav__menu-item is-link is-right is-cta">
+            <li className="top-nav__menu-item is-link is-right">
               <a
                 id="login"
                 className="top-nav__menu-item-link"
