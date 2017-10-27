@@ -20,7 +20,7 @@
   margin:0px 0px 25px 0px;
 }
 
-.homepageTop .topUserBar{
+.topUserBar{
   margin: 0 auto;
   min-width: 670px;
   max-width: 900px;
@@ -29,29 +29,29 @@
   position: relative;
 }
 
-.homepageTop .topUserBar .userBarItems{
+.topUserBar .userBarItems{
   display: inline-block;
   vertical-align: top;
 }
 
-.homepageTop .topUserBar .userBarMode{
+.topUserBar .userBarMode{
   width: 95px;
 }
 
-.homepageTop .topUserBar .userBarSearchBox{
+.topUserBar .userBarSearchBox{
   width: calc(100% - 437px);
   min-width: 225px;
 }
 
-.homepageTop .topUserBar .userBarProType{
+.topUserBar .userBarProType{
   width: 125px;
 }
 
-.homePage .topUserBar .userBarPrice{
+.topUserBar .userBarPrice{
   width: 95px;
 }
 
-.homePage .topUserBar .userBarSize{
+.topUserBar .userBarSize{
   width: 80px;
 }
 
@@ -63,7 +63,7 @@
   height: 37px;
 }
 
-.homepageTop .userBarBtn{
+.userBarBtn{
   position: absolute;
   right: 0;
 }

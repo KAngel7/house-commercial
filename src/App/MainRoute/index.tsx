@@ -34,7 +34,7 @@ class App extends React.Component<AppProps, AppState> {
     return (
       <Router>
         <div className="globalContainer">
-          <Route exact={true} path="/search" component={SearchPage} />
+          <Route exact={true} path="/search([0-9]*)" component={SearchPage} />
           <Route exact={true} path="/" component={HomePage} />
         </div>
       </Router>

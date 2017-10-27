@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { RouteComponentProps } from 'react-router-dom';
+import { RouteComponentProps, Link } from 'react-router-dom';
 import Header from 'Components/Header';
 import SelectComponent from 'Components/SelectComponent';
 import './style.css';
@@ -52,9 +52,11 @@ class HomePage extends React.Component<RouteComponentProps<any>, {}> {
             <div className="userBarItems userBarSize">
               <SelectComponent listItem={this.sizes} />
             </div>
-            <div className="userBarItems userBarBtn">
-              <button className="btn btn-green"><Icon name="search"/></button>
-            </div>
+            <Link to="/search">
+              <div className="userBarItems userBarBtn">
+                <button className="btn btn-green"><Icon name="search"/></button>
+              </div>
+            </ Link>
           </div>
         </div>
       </div>

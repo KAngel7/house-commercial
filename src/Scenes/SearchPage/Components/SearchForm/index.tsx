@@ -2,6 +2,7 @@ import * as React from 'react';
 import './style.css';
 import SingelHouse from 'Components/SingleHouse';
 import SearchMap from '../SearchMap';
+import SelectComponent from 'Components/SelectComponent';
 import { Icon } from 'react-fa';
 
 const houseData: any[] = [{
@@ -39,6 +40,31 @@ interface SearchFormState {
 }
 
 class SearchForm extends React.Component<{}, SearchFormState> {
+  salePropertys = [
+    'For Sale',
+    'For Lease',
+    'Sold',
+    'Leased'
+  ];
+  proTypes = [
+    'Property Type',
+    'Retail',
+    'Offices'
+  ];
+  prices = [
+    'Price',
+    '$ 50,000',
+    '$ 100,000',
+    '$ 150,000',
+    '$ 200,000'
+  ];
+  sizes = [
+    'Size',
+    '20 m2',
+    '40 m2',
+    '60 m2',
+    '80 m2'
+  ];
   constructor() {
     super();
     this.state = {
@@ -99,6 +125,26 @@ class SearchForm extends React.Component<{}, SearchFormState> {
       <div className="searchForm">
         <div className="resultTable">
           <div className="resultTab">
+            <div className="topUserBar">
+              <div className="userBarMode userBarItems">
+                <SelectComponent listItem={this.salePropertys} />
+              </div>
+              <div className="userBarSearchBox userBarItems">
+                <input type="text" name="" id="" className="form-control" placeholder="Search by location or keyword" />
+              </div>
+              <div className="userBarItems userBarProType">
+                <SelectComponent listItem={this.proTypes} />
+              </div>
+              <div className="userBarItems userBarPrice">
+                <SelectComponent listItem={this.prices} />
+              </div>
+              <div className="userBarItems userBarSize">
+                <SelectComponent listItem={this.sizes} />
+              </div>
+              <div className="userBarItems userBarBtn">
+                <button className="btn btn-green"><Icon name="search" /></button>
+              </div>
+            </div>
             <ul>
               <li
                 className={this.state.resultTab === 'map' ? 'active' : ''}

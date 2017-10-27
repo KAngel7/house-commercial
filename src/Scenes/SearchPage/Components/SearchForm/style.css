@@ -1,6 +1,6 @@
 .searchForm {
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 5px);
   overflow: hidden;
   position: relative;
 }
@@ -14,7 +14,20 @@
 }
 
 .resultBody {
-  height: calc(100% - 41px);
+  height: calc(100% - 81px);
+  overflow-y: auto;
+}
+
+.searchForm .topUserBar {
+  min-width: 670px;
+  max-width: 900px;
+  width: 50%;
+  margin-left: 38px;
+  margin-top: 5px;
+}
+
+.resultsList {
+  padding: 10px 30px;
 }
 
 .resultTab li {
@@ -34,7 +47,7 @@
   color: black;
 }
 .resultsMap {
-  height: inherit;
+  height: 100%;
   position: relative;
 }
 .searchMapWrapper {
@@ -50,6 +63,11 @@
   top: 0;
   padding: 10px;
   overflow: auto;
+}
+.resultTab > ul {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 @media screen and (max-width: 767px) {

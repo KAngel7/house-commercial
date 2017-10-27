@@ -21,5 +21,5 @@ export function setUserToken(token: string | null): void {
 }
 
 export function getAuthToken() {
-  return axios.get('http://famimedical.com/api/user', { headers: { token: userToken } });
+  return axios.get('/api/user', { headers: { token: userToken } });
 }
